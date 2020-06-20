@@ -8,7 +8,7 @@ echo.
 :runName
 set /p link="link: "
 if /I "%link%" Equ "q" goto :end
-  start youtube-dl --quiet --extract-audio --audio-format mp3 %link%
+  start youtube-dl --ignore-errors --quiet --extract-audio --audio-format mp3 %link%
 echo.
 goto :runName
 
